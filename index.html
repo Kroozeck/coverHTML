@@ -12,7 +12,7 @@
 
 	<div id="barra-menu">
 		<img id="logo" src="imgs/teraware_logo.png">
-		<div id="menus">
+		<div class="menus">
 		<a class="menu">Empresa</a>
 		<a class="menu">Soluções</a>
 		<a class="menu">Cases de Sucesso</a>
@@ -21,9 +21,9 @@
 	    </div>
 	</div>
 
-	<div id="barra-azul">
-		<h1>TW Flex</h1>
-		<h2 id="parte-de-tras">GESTÃO DE PEQUENAS E MÉDIAS EMPRESAS</h2>
+	<div class="barra-azul">
+		<h1 class="tw-flex">TW Flex</h1>
+		<h2 class="gestao-pequenas">GESTÃO DE PEQUENAS E MÉDIAS EMPRESAS</h2>
 		<img id="logo-fabrica" src="imgs/icone_industria1.png">
 		<h2 class="parte-de-tras">ATENDA AS EXPECTATIVAS DA FABRICA EM CONJUNTO COM O SEU</h2>
 		<h2 class="parte-de-tras">DEPARTAMENTO COMERCIAL</h2>
@@ -32,18 +32,16 @@
 		<h2 class="parte-de-tras">E REDUZA CUSTOS</h2>
 	</div>
 
-	<div id="barra-itens">
-		<div>
-			<div class="caixa-twflex">
+	<div class="barra-itens">
+			<div class="caixa">
 				<img class="img-twflex" src="imgs/stats.png">
 				<h1>TW FLEX</h1>
 				<p>Solução para Gestão de Pequenas e Médias</p>
 				<p>empresas que desejam aumentar a produtividade e</p>
 				<p>a qualidade dos produtos e serviços.</p>
 			</div>
-		</div>
-		<div>
-			<div class="caixa-twdesk">
+
+			<div class="caixa">
 				<img class="img-twdesk" src="imgs/chat.png">
 				<h1>TWDesk</h1>
 				<p>Livre-se de planilhas, documentos impressos e</p>
@@ -51,9 +49,8 @@
 				<p>TWdesk você realiza a gestão do seu Help Desk</p>
 				<p>através da internet.</p>
 			</div>
-		</div>
-		<div>
-			<div class="caixa-websites">
+
+			<div class="caixa">
 				<img class="img-websites" src="imgs/reload.png">
 				<h1>Web Sites Responsivos</h1>
 				<p>Sua empresa está na internet? Seus e-mails</p>
@@ -61,19 +58,39 @@
 				<p>pode ser acessado de dispositivos móveis?</p>
 				<p>Conheça nossas soluções.</p>
 			</div>
-		</div>
+		</div><!--
+			<div>
+				<h1>Por que nos escolher?</h1>
+			</div>
+			<div>
+				<h2>KNOW HOW</h2>
+				<h3>APOVEITE NOSSO CONHECIMENTO</h3>
+			</div>
 		<div>
 			<img src="imgs/clound.png">
+			<h2>CLOUD COMPUTING</h2>
+			<p>Expertise em desenvolvimento de sites</p>
+			<p>responsivos e soluções para internet.</p>
 		</div>
 		<div>
 			<img src="imgs/branch.png">
+			<h2>CONSULTORIA</h2>
+			<p>Consultoria para a elaboração de processos</p>
+			<p>internos eficientes.</p>
 		</div>
 		<div>
 			<img src="imgs/photos.png">
+			<h2>CRIATIVIDADE</h2>
+			<p>Profissionais com conhecimento técnico</p>
+			<p>e alto nível criativo.</p>
 		</div>
 	</div>
 
 	<div id="barra-cinza">
+		<div>
+			<h1>Desenvolver e entregar soluções</h1>
+			<h1>Este é o nosso objetivo, é isso que nos move.</h1>
+		</div>
 		
 	</div>
 
@@ -88,7 +105,7 @@
 	<div id="barra-preta">
 		
 	</div>
-
+-->
 </body>
 <style>
 	#barra-topo{
@@ -104,13 +121,19 @@
 		height: 90px;
 	}
 
-	#barra-azul{
+	.barra-azul{
+		display: inline-block;
 		background-color: rgb(64,81,107);
 		width: 100%;
 		height: 480px;
 	}
 
-	#barra-itens{
+	.tw-flex{
+		margin-left: 40%;
+		padding-top: 1%;
+	}
+
+	.barra-itens{
 		background-color: rgb(255,255,255);
 		width: 100%;
 		height: 480px;
@@ -157,17 +180,24 @@
 		margin-left: 8px;
 	}
 
-	#menus{
-		display: inline-block; 
+	.menus{
+		display: inline-block;
+		padding-left: 35%;
+		padding-bottom: 10%;
 
+
+	}
+
+	.gestao-pequenas{
+		background-color: rgb(222,84,62);
 	}
 
 	.parte-de-tras{
 		background-color: rgb(64,64,64);
 	}
 
-	#parte-de-tras{
-		background-color: rgb(222,84,62);
+	.caixa{
+		display: inline-block;
 	}
 </style>
 </html>
